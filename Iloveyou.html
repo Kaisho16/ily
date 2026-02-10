@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day 💕</title>
+    <link rel="stylesheet" href="Iloveyou.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Stars canvas -->
+    <canvas id="stars"></canvas>
+
+    <!-- Moon -->
+    <div class="moon"></div>
+
+    <!-- Fireflies -->
+    <div class="firefly" style="top:12%;left:8%"></div>
+    <div class="firefly" style="top:28%;left:75%"></div>
+    <div class="firefly" style="top:45%;left:25%"></div>
+    <div class="firefly" style="top:60%;left:85%"></div>
+    <div class="firefly" style="top:18%;left:55%"></div>
+    <div class="firefly" style="top:70%;left:15%"></div>
+    <div class="firefly" style="top:35%;left:90%"></div>
+    <div class="firefly" style="top:52%;left:42%"></div>
+
+    <!-- Garden -->
+    <div class="garden">
+        <svg class="garden-svg" viewBox="0 0 1200 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Ground -->
+            <ellipse cx="600" cy="210" rx="700" ry="50" fill="#1a3a2a"/>
+            <ellipse cx="600" cy="220" rx="750" ry="50" fill="#122a1c"/>
+
+            <!-- Moonflower 1 -->
+            <line x1="60" y1="170" x2="60" y2="90" stroke="#2d6b3e" stroke-width="3"/>
+            <ellipse cx="50" cy="120" rx="12" ry="6" fill="#2d6b3e" transform="rotate(-20 50 120)"/>
+            <g transform="translate(60,85)">
+                <ellipse cx="0" cy="-14" rx="7" ry="14" fill="#fff" opacity="0.95"/>
+                <ellipse cx="12" cy="-7" rx="7" ry="14" fill="#f5f5f0" opacity="0.9" transform="rotate(60)"/>
+                <ellipse cx="-12" cy="-7" rx="7" ry="14" fill="#f5f5f0" opacity="0.9" transform="rotate(-60)"/>
+                <ellipse cx="12" cy="7" rx="7" ry="14" fill="#eee" opacity="0.85" transform="rotate(120)"/>
+                <ellipse cx="-12" cy="7" rx="7" ry="14" fill="#eee" opacity="0.85" transform="rotate(-120)"/>
+                <ellipse cx="0" cy="14" rx="7" ry="14" fill="#f0f0e8" opacity="0.8" transform="rotate(180)"/>
+                <circle cx="0" cy="0" r="6" fill="#fdf6d0"/>
+                <circle cx="0" cy="0" r="8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+            </g>
+
+            <!-- Moonflower 2 -->
+            <line x1="170" y1="170" x2="170" y2="75" stroke="#2d6b3e" stroke-width="3"/>
+            <ellipse cx="180" cy="110" rx="12" ry="6" fill="#2d6b3e" transform="rotate(15 180 110)"/>
+            <g transform="translate(170,70)">
+                <ellipse cx="0" cy="-14" rx="7" ry="14" fill="#fff" opacity="0.95"/>
+                <ellipse cx="12" cy="-7" rx="7" ry="14" fill="#f5f5f0" opacity="0.9" transform="rotate(60)"/>
+                <ellipse cx="-12" cy="-7" rx="7" ry="14" fill="#f5f5f0" opacity="0.9" transform="rotate(-60)"/>
+                <ellipse cx="12" cy="7" rx="7" ry="14" fill="#eee" opacity="0.85" transform="rotate(120)"/>
+                <ellipse cx="-12" cy="7" rx="7" ry="14" fill="#eee" opacity="0.85" transform="rotate(-120)"/>
+                <ellipse cx="0" cy="14" rx="7" ry="14" fill="#f0f0e8" opacity="0.8" transform="rotate(180)"/>
+                <circle cx="0" cy="0" r="6" fill="#fdf6d0"/>
+            </g>
+
+            <!-- Lily 1 -->
+            <line x1="300" y1="170" x2="300" y2="80" stroke="#2e7d32" stroke-width="3"/>
+            <ellipse cx="290" cy="115" rx="14" ry="5" fill="#2e7d32" transform="rotate(-25 290 115)"/>
+            <g transform="translate(300,75)">
+                <ellipse cx="0" cy="-16" rx="6" ry="16" fill="#f48fb1"/>
+                <ellipse cx="14" cy="-8" rx="6" ry="16" fill="#ec407a" transform="rotate(60)"/>
+                <ellipse cx="-14" cy="-8" rx="6" ry="16" fill="#ec407a" transform="rotate(-60)"/>
+                <ellipse cx="14" cy="8" rx="6" ry="16" fill="#e91e63" transform="rotate(120)"/>
+                <ellipse cx="-14" cy="8" rx="6" ry="16" fill="#e91e63" transform="rotate(-120)"/>
+                <ellipse cx="0" cy="16" rx="6" ry="16" fill="#f06292" transform="rotate(180)"/>
+                <circle cx="0" cy="0" r="5" fill="#fff9c4"/>
+                <circle cx="-2" cy="-2" r="1.5" fill="#ff8f00"/>
+                <circle cx="2" cy="1" r="1.5" fill="#ff8f00"/>
+                <circle cx="-1" cy="2" r="1.5" fill="#ff8f00"/>
+            </g>
+
+            <!-- Lily 2 -->
+            <line x1="420" y1="170" x2="420" y2="95" stroke="#2e7d32" stroke-width="3"/>
+            <ellipse cx="430" cy="125" rx="14" ry="5" fill="#2e7d32" transform="rotate(20 430 125)"/>
+            <g transform="translate(420,90)">
+                <ellipse cx="0" cy="-16" rx="6" ry="16" fill="#f48fb1"/>
+                <ellipse cx="14" cy="-8" rx="6" ry="16" fill="#ec407a" transform="rotate(60)"/>
+                <ellipse cx="-14" cy="-8" rx="6" ry="16" fill="#ec407a" transform="rotate(-60)"/>
+                <ellipse cx="14" cy="8" rx="6" ry="16" fill="#e91e63" transform="rotate(120)"/>
+                <ellipse cx="-14" cy="8" rx="6" ry="16" fill="#e91e63" transform="rotate(-120)"/>
+                <ellipse cx="0" cy="16" rx="6" ry="16" fill="#f06292" transform="rotate(180)"/>
+                <circle cx="0" cy="0" r="5" fill="#fff9c4"/>
+                <circle cx="-2" cy="-2" r="1.5" fill="#ff8f00"/>
+                <circle cx="2" cy="1" r="1.5" fill="#ff8f00"/>
+            </g>
+
+            <!-- Sunflower 1 -->
+            <line x1="560" y1="170" x2="560" y2="55" stroke="#3e7a2e" stroke-width="4"/>
+            <ellipse cx="548" cy="100" rx="16" ry="7" fill="#3e7a2e" transform="rotate(-15 548 100)"/>
+            <ellipse cx="575" cy="120" rx="14" ry="6" fill="#3e7a2e" transform="rotate(20 575 120)"/>
+            <g transform="translate(560,50)">
+                <ellipse cx="0" cy="-18" rx="5" ry="13" fill="#fdd835"/>
+                <ellipse cx="9" cy="-15" rx="5" ry="13" fill="#fbc02d" transform="rotate(30)"/>
+                <ellipse cx="16" cy="-9" rx="5" ry="13" fill="#f9a825" transform="rotate(60)"/>
+                <ellipse cx="18" cy="0" rx="5" ry="13" fill="#fdd835" transform="rotate(90)"/>
+                <ellipse cx="16" cy="9" rx="5" ry="13" fill="#fbc02d" transform="rotate(120)"/>
+                <ellipse cx="9" cy="15" rx="5" ry="13" fill="#f9a825" transform="rotate(150)"/>
+                <ellipse cx="0" cy="18" rx="5" ry="13" fill="#fdd835" transform="rotate(180)"/>
+                <ellipse cx="-9" cy="15" rx="5" ry="13" fill="#fbc02d" transform="rotate(210)"/>
+                <ellipse cx="-16" cy="9" rx="5" ry="13" fill="#f9a825" transform="rotate(240)"/>
+                <ellipse cx="-18" cy="0" rx="5" ry="13" fill="#fdd835" transform="rotate(270)"/>
+                <ellipse cx="-16" cy="-9" rx="5" ry="13" fill="#fbc02d" transform="rotate(300)"/>
+                <ellipse cx="-9" cy="-15" rx="5" ry="13" fill="#f9a825" transform="rotate(330)"/>
+                <circle cx="0" cy="0" r="10" fill="#5d4037"/>
+                <circle cx="-3" cy="-3" r="1.2" fill="#4e342e"/>
+                <circle cx="3" cy="-2" r="1.2" fill="#4e342e"/>
+                <circle cx="0" cy="3" r="1.2" fill="#4e342e"/>
+                <circle cx="-2" cy="1" r="1" fill="#3e2723"/>
+                <circle cx="2" cy="2" r="1" fill="#3e2723"/>
+            </g>
+
+            <!-- Sunflower 2 -->
+            <line x1="720" y1="170" x2="720" y2="65" stroke="#3e7a2e" stroke-width="4"/>
+            <ellipse cx="708" cy="110" rx="15" ry="6" fill="#3e7a2e" transform="rotate(-20 708 110)"/>
+            <g transform="translate(720,60)">
+                <ellipse cx="0" cy="-18" rx="5" ry="13" fill="#fdd835"/>
+                <ellipse cx="9" cy="-15" rx="5" ry="13" fill="#fbc02d" transform="rotate(30)"/>
+                <ellipse cx="16" cy="-9" rx="5" ry="13" fill="#f9a825" transform="rotate(60)"/>
+                <ellipse cx="18" cy="0" rx="5" ry="13" fill="#fdd835" transform="rotate(90)"/>
+                <ellipse cx="16" cy="9" rx="5" ry="13" fill="#fbc02d" transform="rotate(120)"/>
+                <ellipse cx="9" cy="15" rx="5" ry="13" fill="#f9a825" transform="rotate(150)"/>
+                <ellipse cx="0" cy="18" rx="5" ry="13" fill="#fdd835" transform="rotate(180)"/>
+                <ellipse cx="-9" cy="15" rx="5" ry="13" fill="#fbc02d" transform="rotate(210)"/>
+                <ellipse cx="-16" cy="9" rx="5" ry="13" fill="#f9a825" transform="rotate(240)"/>
+                <ellipse cx="-18" cy="0" rx="5" ry="13" fill="#fdd835" transform="rotate(270)"/>
+                <ellipse cx="-16" cy="-9" rx="5" ry="13" fill="#fbc02d" transform="rotate(300)"/>
+                <ellipse cx="-9" cy="-15" rx="5" ry="13" fill="#f9a825" transform="rotate(330)"/>
+                <circle cx="0" cy="0" r="10" fill="#5d4037"/>
+                <circle cx="-3" cy="-3" r="1.2" fill="#4e342e"/>
+                <circle cx="3" cy="-2" r="1.2" fill="#4e342e"/>
+                <circle cx="0" cy="3" r="1.2" fill="#4e342e"/>
+            </g>
+
+            <!-- Moonflower 3 -->
+            <line x1="860" y1="170" x2="860" y2="80" stroke="#2d6b3e" stroke-width="3"/>
+            <ellipse cx="850" cy="115" rx="12" ry="6" fill="#2d6b3e" transform="rotate(-18 850 115)"/>
+            <g transform="translate(860,75)">
+                <ellipse cx="0" cy="-14" rx="7" ry="14" fill="#fff" opacity="0.95"/>
+                <ellipse cx="12" cy="-7" rx="7" ry="14" fill="#f5f5f0" opacity="0.9" transform="rotate(60)"/>
+                <ellipse cx="-12" cy="-7" rx="7" ry="14" fill="#f5f5f0" opacity="0.9" transform="rotate(-60)"/>
+                <ellipse cx="12" cy="7" rx="7" ry="14" fill="#eee" opacity="0.85" transform="rotate(120)"/>
+                <ellipse cx="-12" cy="7" rx="7" ry="14" fill="#eee" opacity="0.85" transform="rotate(-120)"/>
+                <ellipse cx="0" cy="14" rx="7" ry="14" fill="#f0f0e8" opacity="0.8" transform="rotate(180)"/>
+                <circle cx="0" cy="0" r="6" fill="#fdf6d0"/>
+            </g>
+
+            <!-- Lily 3 -->
+            <line x1="980" y1="170" x2="980" y2="85" stroke="#2e7d32" stroke-width="3"/>
+            <ellipse cx="990" cy="120" rx="13" ry="5" fill="#2e7d32" transform="rotate(22 990 120)"/>
+            <g transform="translate(980,80)">
+                <ellipse cx="0" cy="-16" rx="6" ry="16" fill="#f48fb1"/>
+                <ellipse cx="14" cy="-8" rx="6" ry="16" fill="#ec407a" transform="rotate(60)"/>
+                <ellipse cx="-14" cy="-8" rx="6" ry="16" fill="#ec407a" transform="rotate(-60)"/>
+                <ellipse cx="14" cy="8" rx="6" ry="16" fill="#e91e63" transform="rotate(120)"/>
+                <ellipse cx="-14" cy="8" rx="6" ry="16" fill="#e91e63" transform="rotate(-120)"/>
+                <ellipse cx="0" cy="16" rx="6" ry="16" fill="#f06292" transform="rotate(180)"/>
+                <circle cx="0" cy="0" r="5" fill="#fff9c4"/>
+                <circle cx="-2" cy="-2" r="1.5" fill="#ff8f00"/>
+                <circle cx="2" cy="1" r="1.5" fill="#ff8f00"/>
+            </g>
+
+            <!-- Sunflower 3 -->
+            <line x1="1120" y1="170" x2="1120" y2="60" stroke="#3e7a2e" stroke-width="4"/>
+            <ellipse cx="1108" cy="105" rx="15" ry="6" fill="#3e7a2e" transform="rotate(-18 1108 105)"/>
+            <g transform="translate(1120,55)">
+                <ellipse cx="0" cy="-18" rx="5" ry="13" fill="#fdd835"/>
+                <ellipse cx="9" cy="-15" rx="5" ry="13" fill="#fbc02d" transform="rotate(30)"/>
+                <ellipse cx="16" cy="-9" rx="5" ry="13" fill="#f9a825" transform="rotate(60)"/>
+                <ellipse cx="18" cy="0" rx="5" ry="13" fill="#fdd835" transform="rotate(90)"/>
+                <ellipse cx="16" cy="9" rx="5" ry="13" fill="#fbc02d" transform="rotate(120)"/>
+                <ellipse cx="9" cy="15" rx="5" ry="13" fill="#f9a825" transform="rotate(150)"/>
+                <ellipse cx="0" cy="18" rx="5" ry="13" fill="#fdd835" transform="rotate(180)"/>
+                <ellipse cx="-9" cy="15" rx="5" ry="13" fill="#fbc02d" transform="rotate(210)"/>
+                <ellipse cx="-16" cy="9" rx="5" ry="13" fill="#f9a825" transform="rotate(240)"/>
+                <ellipse cx="-18" cy="0" rx="5" ry="13" fill="#fdd835" transform="rotate(270)"/>
+                <ellipse cx="-16" cy="-9" rx="5" ry="13" fill="#fbc02d" transform="rotate(300)"/>
+                <ellipse cx="-9" cy="-15" rx="5" ry="13" fill="#f9a825" transform="rotate(330)"/>
+                <circle cx="0" cy="0" r="10" fill="#5d4037"/>
+                <circle cx="-3" cy="-3" r="1.2" fill="#4e342e"/>
+                <circle cx="3" cy="2" r="1.2" fill="#4e342e"/>
+            </g>
+
+            <!-- Grass blades -->
+            <path d="M0,175 Q10,155 5,170 Q20,150 15,170 Q35,145 25,170 Q45,155 40,172 Q60,148 50,170 Q70,155 65,172 Q85,145 75,170 Q95,152 90,172 Q110,148 100,170 Q120,155 115,172 Q140,145 130,170 Q150,152 145,172 Q165,148 155,170 Q175,155 170,172" stroke="#1e5a30" stroke-width="2" fill="none"/>
+            <path d="M180,175 Q190,150 185,170 Q200,145 195,170 Q215,152 205,170 Q225,148 220,172 Q240,155 235,170 Q255,145 245,170 Q265,152 260,172 Q280,148 275,170 Q295,155 290,172 Q310,148 305,170" stroke="#1e5a30" stroke-width="2" fill="none"/>
+            <path d="M380,175 Q390,155 385,170 Q400,148 395,170 Q415,152 410,172 Q430,148 425,170 Q445,155 440,172 Q460,145 455,170 Q475,150 470,172 Q490,148 485,170" stroke="#1e5a30" stroke-width="2" fill="none"/>
+            <path d="M620,175 Q630,152 625,170 Q640,148 635,170 Q655,155 650,172 Q670,145 665,170 Q685,150 680,172 Q700,148 695,170 Q715,155 710,172 Q730,148 725,170" stroke="#1e5a30" stroke-width="2" fill="none"/>
+            <path d="M800,175 Q810,148 805,170 Q820,152 815,170 Q835,148 830,172 Q850,155 845,170 Q870,148 860,170 Q880,152 875,172 Q900,148 895,170 Q910,155 905,172 Q930,148 920,170 Q940,152 935,172" stroke="#1e5a30" stroke-width="2" fill="none"/>
+            <path d="M1020,175 Q1030,152 1025,170 Q1040,148 1035,170 Q1055,155 1050,172 Q1070,148 1065,170 Q1080,155 1075,172 Q1095,148 1090,170 Q1105,152 1100,172 Q1120,148 1115,170 Q1135,155 1130,172 Q1150,148 1145,170 Q1165,152 1160,172 Q1180,148 1175,170 Q1195,155 1190,172" stroke="#1e5a30" stroke-width="2" fill="none"/>
+        </svg>
+    </div>
+
+    <!-- Floating hearts container -->
+    <div id="hearts"></div>
+
+    <!-- Prompt text -->
+    <p class="prompt" id="prompt">💌 Click the envelope, my love 💌</p>
+
+    <!-- ENVELOPE -->
+    <div class="envelope-container" id="envelopeContainer">
+        <!-- Back -->
+        <div class="env-back"></div>
+        <!-- Letter -->
+        <div class="env-letter" id="envLetter">
+            <div class="letter-inner" id="letterInner">
+                <div class="letter-header">
+                    <span class="hearts-deco">💕 💗 💕</span>
+                    <h1>To My Most Beautiful Wife,</h1>
+                    <div class="divider"><span>♥</span></div>
+                </div>
+                <div class="letter-body">
+                    <p>To start I just want to say, <strong>happiest Valentines my baby Koo!</strong> I'm soso happyy that I've met you in my life, I know that you already know this but you complete me as a whole. I cannot live without you darling and you are my other half forever.</p>
+
+                    <p>You are so wonderful, the most prettiest, the most gorgeous and the most exquisite wife that I have in my life. I really really appreciate everything about you, your features, your eyes, your character and most greatly, <em>how you love God with everything you are.</em></p>
+
+                    <p>I'm soso thankful to God also because He gave you to me and I know that He will always have the best plan for the both of us no matter what.</p>
+
+                    <p>I also want to say sorry for the times that you've been hurt by me for being makulet and mapangasar, but thankyou from the bottom of my heart because you really really care about me and I really appreciate it sosos much.</p>
+
+                    <p>I hope that this letter givess you the <strong>kiligs and butterflies</strong> because today I have a <strong>suprise</strong> for you alsoo!</p>
+
+                    <p>Again my darling, <strong>happiest Valentines Day</strong> and see you laterr!</p>
+
+                    <p class="declaration">I love you from the bottom of my soul and my heart, I love you to the most farthest galaxy and back, I love you no matter what happends and I will always be here for you, always my darling.</p>
+
+                    <p class="big-love">I LOVE YOU SO MUCH! 💖</p>
+                    <p class="signature">— Your Hubby 💕</p>
+                </div>
+            </div>
+        </div>
+        <!-- Front bottom -->
+        <div class="env-front"></div>
+        <!-- Flap -->
+        <div class="env-flap" id="envFlap"></div>
+        <!-- Seal -->
+        <div class="env-seal"><span>♥</span></div>
+        <div class="env-label">Happy Valentine's Day</div>
+    </div>
+
+    <!-- Letter overlay (full-screen version when opened) -->
+    <div class="letter-overlay" id="letterOverlay">
+        <div class="letter-full" id="letterFull">
+            <button class="close-btn" id="closeBtn">✕</button>
+            <div class="letter-inner">
+                <div class="letter-header">
+                    <span class="hearts-deco">💕 💗 💕</span>
+                    <h1>To My Most Beautiful Wife,</h1>
+                    <div class="divider"><span>♥</span></div>
+                </div>
+                <div class="letter-body">
+                    <p>To start I just want to say, <strong>happiest Valentines my baby Koo!</strong> I'm soso happyy that I've met you in my life, I know that you already know this but you complete me as a whole. I cannot live without you darling and you are my other half forever.</p>
+
+                    <p>You are so wonderful, the most prettiest, the most gorgeous and the most exquisite wife that I have in my life. I really really appreciate everything about you, your features, your eyes, your character and most greatly, <em>how you love God with everything you are.</em></p>
+
+                    <p>I'm soso thankful to God also because He gave you to me and I know that He will always have the best plan for the both of us no matter what.</p>
+
+                    <p>I also want to say sorry for the times that you've been hurt by me for being makulet and mapangasar, but thankyou from the bottom of my heart because you really really care about me and I really appreciate it sosos much.</p>
+
+                    <p>I hope that this letter givess you the <strong>kiligs and butterflies</strong> because today I have a <strong>suprise</strong> for you alsoo!</p>
+
+                    <p>Again my darling, <strong>happiest Valentines Day</strong> and see you laterr!</p>
+
+                    <p class="declaration">I love you from the bottom of my soul and my heart, I love you to the most farthest galaxy and back, I love you no matter what happends and I will always be here for you, always my darling.</p>
+
+                    <p class="big-love">I LOVE YOU SO MUCH! 💖</p>
+                    <p class="signature">— Your Hubby 💕</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Iloveyou.js"></script>
+</body>
+</html>
